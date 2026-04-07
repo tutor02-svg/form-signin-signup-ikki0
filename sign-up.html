@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM SIGN UP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+
+        <form id="signupForm">
+
+            <div class="row">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+            </div>
+
+            <div class="row">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="row">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <span class="toggle" onclick="togglePass('password','icon1')">
+                    <img id="icon1" src="./assets/show.png" width="20">
+                </span>
+            </div>
+
+            <div class="row">
+                <label for="re-password">Re-Password</label>
+                <input type="password" id="confirm" placeholder="Confirm Password" required>
+                <span class="toggle" onclick="togglePass('confirm','icon2')">
+                    <img id="icon2" src="./assets/show.png" width="20">
+                </span>
+            </div>
+
+            <button type="submit">SIGN UP</button>
+
+        </form>
+
+        <div class="link">
+            already have account? <a href="./index.html">click here</a>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
